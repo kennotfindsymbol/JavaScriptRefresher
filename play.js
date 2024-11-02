@@ -1,8 +1,12 @@
 // run "node play.js" in terminal
 
-var myName = "Ken";
-var myAge = 21;
-var likesCoding = true;
+// var is outdated, use let or const, use const to state a variable does not change
+const myName = "Ken";
+let myAge = 21;
+const likesCoding = true;
+
+// myName = "Kenneth" // This gives error
+myAge = 30;
 
 function summarizeUser(userName, userAge, userLikesCoding) {
   return (
