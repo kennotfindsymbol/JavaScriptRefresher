@@ -106,3 +106,20 @@ const toArraySpread = (...args) => {
 
 console.log(toArray(1, 2, 3));
 console.log(toArraySpread(1, 2, 3, 4));
+
+const printName = (personData) => {
+  console.log(personData.name);
+};
+
+const printNameDestructuring = ({ name }) => {
+  console.log(name);
+};
+
+printName(person);
+printNameDestructuring(person);
+
+const { age: destructuredAge} = person;
+const [hobby1, hobby2] = hobbies;
+
+console.log(destructuredAge);
+console.log(hobby1, hobby2);
