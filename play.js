@@ -74,3 +74,15 @@ const person = {
 
 person.greetNormal();
 person.greetArrow();
+
+const hobbies = ["Sports", "Coding", "Cooking"];
+// for...in outputs key
+for (let hobby in hobbies) {
+  console.log(hobby);
+}
+// for...of outputs value
+for (let hobby of hobbies) {
+  console.log(hobby);
+}
+console.log(hobbies);
+console.log(hobbies.map((hobby) => "Hobby: " + hobby));
