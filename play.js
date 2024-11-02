@@ -84,5 +84,10 @@ for (let hobby in hobbies) {
 for (let hobby of hobbies) {
   console.log(hobby);
 }
+
 console.log(hobbies);
 console.log(hobbies.map((hobby) => "Hobby: " + hobby));
+
+// works even though hobbies is a const, since array is a reference type, not primitive type
+hobbies.push("Music");
+console.log(hobbies);
