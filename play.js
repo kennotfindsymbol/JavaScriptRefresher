@@ -90,4 +90,19 @@ console.log(hobbies.map((hobby) => "Hobby: " + hobby));
 
 // works even though hobbies is a const, since array is a reference type, not primitive type
 hobbies.push("Music");
+
 console.log(hobbies);
+
+const copiedArray = [...hobbies, "Gaming"];
+console.log(copiedArray);
+
+const toArray = (arg1, arg2, arg3) => {
+  return [arg1, arg2, arg3];
+};
+
+const toArraySpread = (...args) => {
+  return args;
+};
+
+console.log(toArray(1, 2, 3));
+console.log(toArraySpread(1, 2, 3, 4));
