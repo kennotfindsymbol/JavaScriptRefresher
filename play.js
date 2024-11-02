@@ -43,6 +43,14 @@ const summarizeUserArrow = (userName, userAge, userLikesCoding) => {
   );
 };
 
+const addWithReturn = (a, b) => {
+  return a + b;
+};
+
+const addWithoutReturn = (a, b) => a + b;
+
+const addNoArgument = () => 3 + 4;
+
 console.log(summarizeUser(myName, myAge, likesCoding));
 console.log(summarizeUserAnonymous(myName, myAge, likesCoding));
 console.log(summarizeUserArrow(myName, myAge, likesCoding));
