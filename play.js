@@ -54,3 +54,7 @@ const addNoArgument = () => 3 + 4;
 console.log(summarizeUser(myName, myAge, likesCoding));
 console.log(summarizeUserAnonymous(myName, myAge, likesCoding));
 console.log(summarizeUserArrow(myName, myAge, likesCoding));
+
+console.log(addWithReturn(1, 2));
+console.log(addWithoutReturn(1, 2));
+console.log(addNoArgument());
