@@ -8,6 +8,10 @@ const likesCoding = true;
 // myName = "Kenneth" // This gives error
 myAge = 30;
 
+console.log("+-------------------+");
+console.log("| Function examples |");
+console.log("+-------------------+");
+
 function summarizeUser(userName, userAge, userLikesCoding) {
   return (
     "Name is " +
@@ -59,6 +63,10 @@ console.log(addWithReturn(1, 2));
 console.log(addWithoutReturn(1, 2));
 console.log(addNoArgument());
 
+console.log("+-----------------+");
+console.log("| Object examples |");
+console.log("+-----------------+");
+
 // an object
 const person = {
   name: "Ken",
@@ -74,6 +82,10 @@ const person = {
 
 person.greetNormal();
 person.greetArrow();
+
+console.log("+----------------+");
+console.log("| Array examples |");
+console.log("+----------------+");
 
 const hobbies = ["Sports", "Coding", "Cooking"];
 // for...in outputs key
@@ -93,6 +105,10 @@ hobbies.push("Music");
 
 console.log(hobbies);
 
+console.log("+-----------------------------------+");
+console.log("| Spread and rest operator examples |");
+console.log("+-----------------------------------+");
+
 const copiedArray = [...hobbies, "Gaming"];
 console.log(copiedArray);
 
@@ -107,6 +123,10 @@ const toArraySpread = (...args) => {
 console.log(toArray(1, 2, 3));
 console.log(toArraySpread(1, 2, 3, 4));
 
+console.log("+------------------------+");
+console.log("| Destructuring examples |");
+console.log("+------------------------+");
+
 const printName = (personData) => {
   console.log(personData.name);
 };
@@ -118,7 +138,7 @@ const printNameDestructuring = ({ name }) => {
 printName(person);
 printNameDestructuring(person);
 
-const { age: destructuredAge} = person;
+const { age: destructuredAge } = person;
 const [hobby1, hobby2] = hobbies;
 
 console.log(destructuredAge);
