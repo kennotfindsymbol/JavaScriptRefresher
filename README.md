@@ -1,5 +1,8 @@
 # JavaScriptRefresher
 
+### Motivation
+Built for someone (or myself) if they have not worked with JavaScript for a while. Not a language tutorial.
+
 ### Summary
 #### Weakly Typed Language
 - No explicit type assignment
